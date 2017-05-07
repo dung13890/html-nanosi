@@ -1,1 +1,1 @@
-# HTML for nanosi project.
+# HTML for nanosi project. use pug, scss and js.
