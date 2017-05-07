@@ -1,0 +1,176 @@
+//
+// Abstracts :: Mixins
+// --------------------------------------------------
+
+/// Responsive breakpoint manager
+/// @access public
+/// @param {String} $breakpoint - Breakpoint
+/// @requires $breakpoints
+$breakpoints: (
+  'smallphone-and-down': (max-width: 480px),
+  'phone-and-down': (max-width: 767px),
+  'tablet-and-down': (max-width: 991px),
+  'desktop-and-down': (max-width: 1199px),
+  'large-desktop-and-down': (max-width: 1350px),
+  'phone-and-up': (min-width: 768px),
+  'tablet-and-up': (min-width: 992px),
+  'desktop-and-up': (min-width: 1200px)
+);
+
+@mixin respond-to($breakpoint) {
+  $raw-query: map-get($breakpoints, $breakpoint);
+
+  @if $raw-query {
+    $query: if(
+      type-of($raw-query) == 'string',
+      unquote($raw-query),
+      inspect($raw-query)
+    );
+
+    @media #{$query} {
+      @content;
+    }
+  } @else {
+    @error 'No value found for `#{$breakpoint}`. '
+         + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}
+
+
+/// Truncate text multiline
+/// @param {string} $line-height - Line height of text
+/// @param {number} $line-count - Number of line
+/// @param {string} $bg-color - Background color of text
+@mixin truncate-multiline($line-height: 1.2em, $line-count: 1, $bg-color: $white) {
+  overflow: hidden;
+  position: relative;
+  line-height: $line-height;
+  max-height: $line-height * $line-count;
+  text-align: justify;
+  margin-right: -1em;
+  padding-right: 1em;
+
+  &:before {
+    content: '...';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: .2em;
+    background: $bg-color;
+  }
+}
+
+
+/// Spec styling for IE9+
+@mixin fix-ie9-and-up() {
+  @media screen and (min-width:0\0) {
+    @content;
+  }
+}
+
+@mixin transition($val) {
+  transition: $val;
+  -webkit-transition: $val;
+  -moz-transition: $val;
+  -o-transition: $val;
+  -ms-transition: $val;
+}
+
+@mixin border-radius($val) {
+  border-radius: $val;
+  -moz-border-radius: $val;
+  -o-border-radius: $val;
+  -webkit-border-radius: $val;
+  -ms-border-radius: $val;
+}
+
+@mixin transform($val) {
+  -webkit-transform: $val;
+  -moz-transform: $val;
+  -ms-transform: $val;
+  -o-transform: $val;
+  transform: $val
+}
+
+/* ------------------- Base: Keyframes ------------------- */
+@-webkit-keyframes spinner-bubble {
+  from {
+    width: 10px;
+    height: 10px;
+    opacity: .8;
+  }
+  to {
+    width: 60px;
+    height: 60px;
+    opacity: 0;
+  }
+}
+
+@keyframes spinner-bubble {
+  from {
+    width: 10px;
+    height: 10px;
+    opacity: .8;
+  }
+  to {
+    width: 60px;
+    height: 60px;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes circus {
+  0% {
+    @include transform(rotate(0deg))
+  }
+  50% {
+    @include transform(rotate(180deg))
+  }
+  100% {
+    @include transform(rotate(360deg))
+  }
+}
+
+@keyframes circus {
+  0% {
+    @include transform(rotate(0deg))
+  }
+  50% {
+    @include transform(rotate(180deg))
+  }
+  100% {
+    @include transform(rotate(360deg))
+  }
+}
+
+@-webkit-keyframes circus-back {
+  0% {
+    @include transform(rotate(0deg))
+  }
+  50% {
+    @include transform(rotate(-180deg))
+  }
+  100% {
+    @include transform(rotate(-360deg))
+  }
+}
+
+@keyframes circus-back {
+  0% {
+    @include transform(rotate(0deg))
+  }
+  50% {
+    @include transform(rotate(-180deg))
+  }
+  100% {
+    @include transform(rotate(-360deg))
+  }
+}

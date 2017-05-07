@@ -1,0 +1,65 @@
+extends layouts/layout
+
+block main
+  section#feature-area.feature-area
+    .feature-area-container
+      .slide-show.owl-carousel.owl-theme
+        each val in [1, 2, 3, 4]
+          .item
+            img(src="images/slide-0" + val + ".jpg" alt="")
+            .caption
+              .caption-inner
+                h1 GIỚI THIỆU CHUNG
+                p
+                  | Với uy tín, kinh nghiệm trong việc sản xuất các mặt hàng máy nước nóng năng lượng mặt trời, thiết bị vệ sinh cao cấp ….cho các dự án lớn, các công trình có quy mô.
+      .feature-area-collapse.hidden-xs
+        #accordion.panel-group
+          .panel.panel-default
+            .panel-heading
+              h4.panel-title
+                a(data-toggle='collapse', data-parent='#accordion', href='#collapseOne')
+                    | Máy nước nóng năng lượng mặt trời
+            // /.panel-heading
+            #collapseOne.panel-collapse.collapse.in
+              .panel-body
+                img(src='images/anh-bon-rua.png')
+                | Tiết kiệm tối đa: Tiết kiệm điện, gas, than, dầu. Tiết kiệm thời gian đun nấu, chờ đợi. Đầu tư một lần, sử dụng lâu dài. Không tốn thời gian, chi phí bảo dưỡng định kỳ.
+                a.see-more Chi tiết +
+              // /.panel-body
+            // /.panel-collapse
+          // /.panel
+          .panel.panel-default
+            .panel-heading
+              h4.panel-title
+                a.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapseTwo')
+                  | Bơm nhiệt: HeatPump
+            // /.panel-heading
+            #collapseTwo.panel-collapse.collapse
+              .panel-body
+                img(src='images/anh-may-loc-nuoc-ro-3.png')
+                | Máy hoạt động trên nguyên lý hấp thu nhiệt trong không khí tự nhiên để làm nóng môi chất, môi chất này được nén lại để tạo nhiệt độ cao và truyền nhiệt này vào nước trong bình chứa.
+                a.see-more Chi tiết +
+              // /.panel-body
+            // /.panel-collapse
+          // /.panel
+          .panel.panel-default
+            .panel-heading
+              h4.panel-title
+                a.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapseThree')
+                  | Máy lọc nước tinh khiêt RO
+            // /.panel-heading
+            #collapseThree.panel-collapse.collapse
+              .panel-body
+                img(src='images/anh-bon-rua.png')
+                | Nanosi dòng sản phẩm thế hệ mới-bơm nhiệt: Heat Pump. Thế hệ thứ tư năng lượng mặt trời: sử dụng công nghệ bơm nhiệt
+                a.see-more Chi tiết +
+              // /.panel-body
+            // /.panel-collapse
+          // /.panel
+        // /.panel-group
+  section#home-banner.home-banner.text-center
+    .container
+      .present
+        h1 CÔNG TY CỔ PHẦN TOÀN MỸ
+        .col-md-10.col-md-offset-1
+          p Là tập đoàn có uy tín sản xuất các mặt hàng thiết bị vệ sinh, thiết bị nhà bếp, máy nước nóng năng lượng mặt trời, máy lọc nước tinh khiết r.o tại Việt Nam, Sản phẩm được sản xuất theo TCQT ISO 9001:2008. Các sản phẩm của công ty được người tiêu dùng đánh giá cao bởi chất lượng tốt, mẫu mã đẹp, giá thành hợp lý, dịch vụ trước và sau bán hàng hoàn hảo và đặc biệt được tích hợp các tính năng ưu việt nổi trội so với các dòng sản phẩm khác trên thị trường.

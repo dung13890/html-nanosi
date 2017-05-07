@@ -1,0 +1,45 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/functions';
+@import 'abstracts/placeholders';
+@import 'abstracts/animations';
+
+@import 'vendors/bootstrap-override-variable';
+@import 'vendors/menuzord';
+@import 'bootstrap';
+@import 'font-awesome';
+@import 'animate.min';
+@import 'owl.carousel';
+@import 'select2.min';
+@import 'awesome-bootstrap-checkbox.scss';
+
+@import 'base/reset';
+@import 'base/utility-classes';
+@import 'base/global';
+@import 'base/typography';
+@import 'base/images';
+
+@import 'components/grids';
+@import 'components/ui-elements';
+@import 'components/tables';
+@import 'components/icons';
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/social';
+@import 'components/breadcrumb';
+
+@import 'theme/theme';
+
+@import 'layout/content';
+@import 'layout/header';
+@import 'layout/header-bar';
+@import 'layout/header-menu';
+@import 'layout/header-sticky';
+@import 'layout/header-mobile';
+@import 'layout/footer';
+
+@import 'pages/home';
+@import 'pages/shop';
+
+@import 'theme/presets';
+@import 'theme/responsive';

@@ -1,0 +1,34 @@
+extends layouts/layout
+
+mixin category(url, title, imageName, description)
+  .category.col-xs-12.col-sm-6.col-md-3.col-lg-3
+    .category-wrapper
+      a(href=url)
+        img.category-img(
+          src="images/" + imageName
+        )
+      .category-content
+        h3.category-title
+          a(href=url) #{title}
+        p.category-description #{description}
+block main
+  include modules/elements/breadcrumb
+
+  h1.page-title Thiet bi phong tam
+  .category-image
+    img(src="images/img-cat-01.jpg", alt="")
+  .categories
+    .container
+      .row
+        +category('shop-category.html', 'Sản Phẩm Mới', 'category-01.jpg', 'Chung toi mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn.')
+        +category('shop-category.html', 'Sản Phẩm Mới', 'category-02.jpg', 'Chung toi mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn.')
+        +category('shop-category.html', 'Sản Phẩm Mới', 'category-03.jpg', 'Chung toi mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn.')
+        +category('shop-category.html', 'Sản Phẩm Mới', 'category-04.jpg', 'Chung toi mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn.')
+        +category('shop-category.html', 'Sản Phẩm Mới', 'category-05.jpg', 'Chung toi mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn.')
+        +category('shop-category.html', 'Sản Phẩm Mới', 'category-06.jpg', 'Chung toi mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn.')
+        +category('shop-category.html', 'Sản Phẩm Mới', 'category-07.jpg', 'Chung toi mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn.')
+        +category('shop-category.html', 'Sản Phẩm Mới', 'category-08.jpg', 'Chung toi mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn.')
+        +category('shop-category.html', 'Sản Phẩm Mới', 'category-09.jpg', 'Chung toi mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn.')
+        +category('shop-category.html', 'Sản Phẩm Mới', 'category-10.jpg', 'Chung toi mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn.')
+        +category('shop-category.html', 'Sản Phẩm Mới', 'category-11.jpg', 'Chung toi mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn.')
+        +category('shop-category.html', 'Sản Phẩm Mới', 'category-12.jpg', 'Chung toi mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn.')

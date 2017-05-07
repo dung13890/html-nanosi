@@ -1,0 +1,49 @@
+//
+// Base :: Utility Classes
+// --------------------------------------------------
+
+/// Spacing classes
+/// Used to override styles on components without need for
+/// additional modifier classes
+///
+/// Usage:
+/// <div class="u-mb0"> // margin-bottom: 0
+/// <div class="u-mt20"> // margin-top: 20px
+
+/// Vertical
+$vertical-property-map: (
+  mt: margin-top,
+  mb: margin-bottom,
+  pt: padding-top,
+  pb: padding-bottom,
+);
+$sizes-list: 5 10 15 20 25 30;
+
+@each $size in $sizes-list {
+  $val: $size + px;
+  @each $keyword, $property in $vertical-property-map {
+    .u-#{$keyword}#{$size} {
+      #{$property}: $val !important;
+    }
+  }
+}
+
+/// Zero
+$zero-property-map: (
+  m: margin,
+  mt: margin-top,
+  mr: margin-right,
+  mb: margin-bottom,
+  ml: margin-left,
+  p: padding,
+  pt: padding-top,
+  pr: padding-right,
+  pb: padding-bottom,
+  pl: padding-left
+);
+
+@each $keyword, $property in $zero-property-map {
+  .u-#{$keyword}0 {
+    #{$property}: 0 !important;
+  }
+}

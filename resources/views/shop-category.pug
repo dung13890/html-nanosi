@@ -1,0 +1,37 @@
+extends layouts/layout
+
+append config
+  - var current = 'shopcategory'
+
+mixin product(url, title, imageName, price)
+  .product.col-xs-12.col-sm-6.col-md-3.col-lg-3
+    .product-wrapper
+      a(href=url)
+        img.product-img(
+          src="images/" + imageName
+        )
+      .product-content
+        h3.product-title
+          a(href=url) #{title}
+        p.product-price #{price}
+block main
+  include modules/elements/breadcrumb
+
+  h1.page-title Thiet bi phong tam
+  .category-image
+    img(src="images/img-cat-01.jpg", alt="")
+  .products
+    .container
+      .row
+        +product('shop-single.html', 'iPhone 7+', 'produc-01.jpg', '$34')
+        +product('shop-single.html', 'Printer Ink', 'produc-02.jpg', '$69')
+        +product('shop-single.html', 'MP3 Player', 'produc-03.jpg', '$89')
+        +product('shop-single.html', 'MP3 Player', 'produc-04.jpg', '$89')
+        +product('shop-single.html', 'MP3 Player', 'produc-01.jpg', '$89')
+        +product('shop-single.html', 'MP3 Player', 'produc-02.jpg', '$89')
+        +product('shop-single.html', 'MP3 Player', 'produc-03.jpg', '$89')
+        +product('shop-single.html', 'MP3 Player', 'produc-04.jpg', '$89')
+        +product('shop-single.html', 'MP3 Player', 'produc-01.jpg', '$89')
+        +product('shop-single.html', 'MP3 Player', 'produc-02.jpg', '$89')
+        +product('shop-single.html', 'MP3 Player', 'produc-03.jpg', '$89')
+        +product('shop-single.html', 'MP3 Player', 'produc-04.jpg', '$89')

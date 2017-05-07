@@ -1,0 +1,53 @@
+//
+// Components :: Socials
+// --------------------------------------------------
+
+.social-icons {
+  margin: 0;
+  list-style-type: none;
+  li {
+    display: inline-block;
+    line-height: inherit;
+    margin: 0 0 0 3px;
+    a {
+      color: #fff;
+      font-size: 14px;
+      line-height: 30px;
+      text-align: center;
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      border-radius: 100%;
+      background-color: #acacac;
+      i {
+        line-height: 30px;
+      }
+    }
+    &.facebook {
+      a {
+        background-color: #0054a6;
+      }
+    }
+    &.twitter {
+      a {
+        background-color: #00aeef;
+      }
+    }
+    &.pinterest {
+      a {
+        background-color: #a864a8;
+      }
+    }
+    &.google-plus {
+      a {
+        background-color: #bf0006;
+      }
+    }
+  }
+  &.square {
+    margin-bottom: 10px;
+    li a{
+      border-radius:0;
+    }
+  }
+}

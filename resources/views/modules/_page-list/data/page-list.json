@@ -1,0 +1,30 @@
+{
+  "pageList": {
+    "data": [
+      {
+        "title": "Trang chu",
+        "url": "index"
+      },
+      {
+        "title": "Gioi thieu",
+        "url": "about"
+      },
+      {
+        "title": "Thiet bi phong tam",
+        "url": "shop"
+      },
+      {
+        "title": "Thiet bi nha bep",
+        "url": "shop"
+      },
+      {
+        "title": "Ly do chon Nanosi",
+        "url": "page"
+      },
+      {
+        "title": "Lien he",
+        "url": "contact"
+      }
+    ]
+  }
+}

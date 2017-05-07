@@ -1,0 +1,33 @@
+//
+// Theme :: Nanosi
+// --------------------------------------------------
+
+body {
+  // font-family: $font-family-primary;
+  // font-family: Normal 12px Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  background-image: url('../images/bg_body.png');
+  background-attachment: fixed;
+}
+
+@media (min-width: 1230px) {
+  .container {
+    width: 1030px;
+  }
+}
+
+.site-wrap {
+  max-width: 1030px;
+  margin: 0 auto;
+  padding: 0;
+	box-shadow: 0 0 5px rgba(97, 79, 79, 0.2);
+  background: #fff;
+}
+
+.dropdown-menu {
+  border: 0;
+}

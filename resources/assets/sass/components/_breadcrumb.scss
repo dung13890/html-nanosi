@@ -1,0 +1,15 @@
+//
+// Components :: Breadcrumb
+// --------------------------------------------------
+
+.breadcrumb {
+    padding: 8px 15px 0;
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: #999;
+    background-color: #fff;
+    border-radius: 0;
+    .breadcrumb-separator {
+      margin: 0 3px;
+    }
+}

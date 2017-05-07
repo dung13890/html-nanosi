@@ -1,0 +1,200 @@
+//
+// Theme :: Presets
+// --------------------------------------------------
+
+$black: #000;
+$white: #fff;
+$color_body: #5c5b58;
+$color_heading: #111;
+$color_primary: #34495e;
+$color_second: #829dab;
+$color_tertiary: orange;
+$color_border: #ebebeb;
+$border_radius: 3px;
+
+// Transition
+$transition: all 0.4s;
+$transition_ease: all .3s ease-in-out;
+
+// Input, Select, Textarea colors
+$color_fields: #acacac;
+$color_placeholder: #acacac;
+$color_fields_background: #fff;
+
+// Dropdown
+$box_shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+$box_shadow_sticky: rgba(0, 0, 0, 0.0980392) 0px 0px 10px;
+$box_shadow_boxed: 0 0 10px rgba(0, 0, 0, 0.3);
+
+// Helper colors for form error states
+$color_disabled: #f4f4f4;
+$color_disabled_border: #f4f4f4;
+$color_error: #d20000;
+$color_error_bg: #fff8f8;
+$color_success: #19a340;
+$color_success_bg: #f8fff9;
+
+/* ------------------- Presets Style ------------------- */
+
+body {
+	color: $color_body;
+}
+
+a {
+  color: #444;
+  &:hover {
+    color: $color_primary;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: $color_heading;
+  a {
+    color: $color_heading;
+    &:hover {
+      color: $color_primary;
+    }
+  }
+}
+
+abbr[title] {
+  border-color: $color_border;
+}
+
+table, th, td {
+	border-color: $color_border;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+textarea,
+select {
+  border-color: $color_border;
+  color: $color_fields;
+  background-color: $color_fields_background;
+  @include transition($transition_ease);
+  &:focus {
+  	border-color: $color_primary;
+  }
+}
+
+.pagination,
+.entry-pagination,
+.post-navigation,
+.posts-navigation {
+  border-color: $color_border;
+}
+
+.load-more-pagination,
+.infinite-pagination {
+  .button {
+    &:hover {
+      background: $color_primary;
+    }
+  }
+}
+
+btn,
+.btn,
+button,
+.button,
+input.submit,
+input[type="submit"],
+.btn-default,
+.open>.dropdown-toggle.btn-default {
+  color: $white;
+  border-color: $color_primary;
+  background-color: $color_primary;
+  &:hover,
+	&.active.focus,
+	&.active:focus,
+	&.active:hover,
+	&:active.focus,
+	&:active:focus,
+	&:active:hover,
+	&.focus,
+	&:focus {
+    color: $white;
+    border-color: $color_second;
+    background: $color_second;
+  }
+}
+
+/* Navigation */
+.megamenu {
+	a {
+		&:hover {
+			color: $color_tertiary;
+		}
+	}
+}
+
+.menuzord.red .menuzord-menu > li.active > a, .menuzord.red .menuzord-menu > li:hover > a, .menuzord.red .menuzord-menu ul.dropdown li:hover > a {
+	color: $color_tertiary;
+}
+
+.menuzord-menu {
+	ul {
+		> li {
+			> a {
+				&:hover {
+					color: $color_tertiary;
+				}
+			}
+
+			&.active {
+				> a {
+					color: $color_tertiary;
+				}
+			}
+		}
+	}
+}
+
+// Slider
+.slide-show {
+	.owl-dots {
+		.owl-dot {
+			&:hover,
+			&.active {
+				span {
+					background: $color_tertiary;
+				}
+			}
+		}
+	}
+}
+
+/* Footer */
+.footer-col {
+	.post {
+		a.read-more {
+			&:hover {
+				color: $color_tertiary;
+			}
+		}
+	}
+}
+
+.footer-copyright {
+  a {
+		&:hover {
+			color: $color_tertiary;
+		}
+  }
+}

@@ -1,0 +1,27 @@
+//
+// Abstracts :: Placeholders
+// --------------------------------------------------
+
+// Reset ul, ol list style
+%reset-list-style {
+  list-style: none;
+  padding: 0;
+}
+
+
+// Truncate oneline
+%truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+// Clearfix
+%clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}

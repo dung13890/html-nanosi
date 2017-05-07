@@ -1,0 +1,30 @@
+block config
+    - var current = 'home'
+    - var pageTitle = 'Nanosi'
+
+doctype html
+html
+  head
+    title= pageTitle
+    meta(charset='utf-8')
+    meta(name='description', content='')
+    meta(name='keywords', content='')
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(href='https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i', rel='stylesheet')
+    link(rel='stylesheet', type='text/css', href='css/frontend.css')
+
+  body
+    .site-wrap
+      // Header
+      include ../modules/header/header
+
+      // Site content
+      .site-content
+        block main
+          // page content will come here.
+
+      // Footer
+      include ../modules/footer/footer
+
+    script(type='text/javascript', src='js/script.js')
+    script(type='text/javascript', src='js/frontend.js')

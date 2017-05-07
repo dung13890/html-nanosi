@@ -1,0 +1,162 @@
+//
+// Abstracts :: Typography
+// --------------------------------------------------
+
+body {
+	position: relative;
+	line-height: 24px;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1.6;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+p {
+	margin-bottom: 1.6em;
+}
+
+a img {
+    border: 0;
+}
+
+p,
+dl,
+pre {
+	margin-bottom: 25px;
+}
+
+ul,
+ol {
+	ul,
+	ol {
+		margin-bottom: 0;
+	}
+	ul {
+		margin-left: 10px;
+	}
+	ol {
+		margin-left: 20px;
+	}
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+i,
+em,
+var,
+dfn,
+cite {
+    font-style: italic;
+}
+
+code,
+kbd,
+tt,
+var,
+samp,
+pre {
+    font-family: Inconsolata, monospace;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
+pre {
+    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.01);
+    border: 1px solid #eaeaea;
+    border: 1px solid rgba(51, 51, 51, 0.1);
+    line-height: 1.2;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 0.8em;
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+cite {
+	font-weight: 500;
+}
+
+option {
+	padding: 5px 8px;
+	font-size: 0.87rem;
+}
+
+address {
+    font-style: italic;
+    margin: 0 0 1.6em;
+}
+
+abbr[title] {
+    font-weight: bold;
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+    cursor: help;
+}
+
+mark,
+ins {
+    text-decoration: none;
+}
+
+sup,
+sub {
+    font-size: 75%;
+    height: 0;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    bottom: 1ex;
+}
+
+sub {
+    top: .5ex;
+}
+
+small {
+    font-size: 75%;
+}
+
+big {
+    font-size: 125%;
+}

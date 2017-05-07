@@ -1,0 +1,73 @@
+//
+// Components :: Forms
+// --------------------------------------------------
+
+/* ------------------- Input placeholder ------------------- */
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: #acacac;
+  font-style: normal;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #acacac;
+  font-style: normal;
+  opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #acacac;
+  font-style: normal;
+  opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #acacac;
+  font-style: normal;
+}
+
+/* ------------------- Input - Textarea - Select ------------------- */
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+textarea,
+select {
+  font-size: 14px;
+  line-height: 20px;
+  height: 40px;
+  padding: 9px 15px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+textarea {
+  width: 100%;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type="search"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: textfield;
+}
+
+.textarea,
+textarea {
+  min-height: 130px;
+}

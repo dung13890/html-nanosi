@@ -1,0 +1,117 @@
+//- Mixin
+mixin navLink
+  #menuzord.menuzord.red
+    a.menuzord-brand.hidden-lg.hidden-md.hidden-sm(href="javascript:void(0)") NANOSI
+    ul.menuzord-menu
+      li.active
+        a(href='index.html') Trang chủ
+      li
+        a(href='about.html') Giới thiệu
+      li
+        a(href='shop-categories.html') Thiết bị phòng tắm
+        .megamenu
+          .megamenu-row
+            .col6
+              img(
+                src="images/mm-bn-1.jpg"
+                alt=""
+              )
+            .col6
+              img(
+                src="images/mm-bn-2.jpg"
+                alt=""
+              )
+          .megamenu-row
+            .col4
+              ul.list-unstyled
+                li
+                  h5 Thiet bi phong tam
+                li
+                  a(href='shop-category.html') Voi nuoc
+                li
+                  a(href='shop-category.html') Bon ve sinh nu
+                li
+                  a(href='shop-category.html') Voi rua
+                li
+                  a(href='shop-category.html') Bon cau
+            .col4
+              ul.list-unstyled
+                li
+                  h5 San pham moi
+                li
+                  a(href='shop-category.html') Bon tam massage
+                li
+                  a(href='shop-category.html') Nap bon cau
+                li
+                  a(href='shop-category.html') Phu kien phong tam
+                li
+                  a(href='shop-category.html') Noi that phong tam
+            .col4
+              ul.list-unstyled
+                li
+                  h5 San pham nghe thuat
+                li
+                  a(href='shop-category.html') San pham khu cong cong
+                li
+                  a(href='shop-category.html') Chau rua
+                li
+                  a(href='shop-category.html') Bo san pham
+                li
+                  a(href='shop-category.html') Voi nuoc
+      li
+        a(href='shop-categories.html') Thiết bị nhà bếp
+        .megamenu
+          .megamenu-row
+            .col4
+              ul.list-unstyled
+                li
+                  h5 San pham moi
+                li
+                  a(href='shop-category.html') Voi bep
+                li
+                  a(href='shop-category.html') Chau bep
+                li
+                  a(href='shop-category.html') Tu ke bep
+                li
+                  a(href='shop-category.html') Chau innox
+            .col4
+              ul.list-unstyled
+                li
+                  h5 Phu kien nha bep
+                li
+                  a(href='shop-category.html') Voi bep
+                li
+                  a(href='shop-category.html') Chau bep
+                li
+                  a(href='shop-category.html') Tu ke bep
+                li
+                  a(href='shop-category.html') Chau innox
+            .col4
+              ul.list-unstyled
+                li
+                  h5 Phu kien nha bep
+                li
+                  a(href='shop-category.html') Voi bep
+                li
+                  a(href='shop-category.html') Chau bep
+                li
+                  a(href='shop-category.html') Tu ke bep
+                li
+                  a(href='shop-category.html') Chau innox
+          .megamenu-row
+            .col6
+              img(
+                src="images/mm-bn-1.jpg"
+                alt=""
+              )
+            .col6
+              img(
+                src="images/mm-bn-2.jpg"
+                alt=""
+              )
+      li
+        a(href='javascript:void(0)') Lý do chọn Nanosi
+      li
+        a(href='contact.html') Liên hệ
+.header-menu.clearfix
+  +navLink

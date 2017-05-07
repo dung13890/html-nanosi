@@ -1,0 +1,40 @@
+//
+// Abstracts :: Variables
+// --------------------------------------------------
+
+/// Paths
+/// -------------------------------------------------
+$path-image: '../images/';
+$path-font: '../fonts/';
+
+
+/// Colors
+/// -------------------------------------------------
+$white: #fff;
+$black: #000;
+$brand-primary: #fe3d3d;
+$success: #468847;
+$error: #d9534f;
+$warning: #f0ad4e;
+$link-blue: #0091ea;
+$brand-info: #4bcbfa;
+
+
+/// Typography
+/// -------------------------------------------------
+$font-family-primary: 'Lato', sans-serif;;
+
+
+/// Transitions
+/// -------------------------------------------------
+$timing-function-ease-out-cubic: cubic-bezier(.215, .610, .355, 1);
+
+
+/// Borders
+/// -------------------------------------------------
+$radius-lg: 10px;
+$radius-sm: 3px;
+
+/// Form
+/// -------------------------------------------------
+$input-border-color:#ccc;

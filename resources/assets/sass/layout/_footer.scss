@@ -1,0 +1,123 @@
+//
+// Layout :: Footer
+// --------------------------------------------------
+
+/* ------------------- Footer: Index ------------------- */
+footer {
+  background-color: #34495e;
+  input[type="text"] {
+    height: 36px;
+  }
+}
+
+.footer-col {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  p {
+    color: #fff;
+    font-size: 13px;
+    margin-bottom: 15px;
+    i {
+      color: #999;
+      width: 20px;
+    }
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #fff;
+  }
+  .post {
+    padding-left: 80px;
+    position: relative;
+    margin-bottom: 15px;
+    img {
+      top: 0;
+      left: 0;
+      position: absolute;
+    }
+    h4 {
+      margin-top: 0;
+      color: orange;
+      line-height: 1.1!important;
+      font-size: 13px;
+      margin-bottom: 5px;;
+      a {
+        color: orange;
+        font-weight: normal;
+      }
+    }
+    p {
+      margin-bottom: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    a.read-more {
+      color: #fff;
+      font-size: 13px;
+    }
+  }
+}
+
+.footer-ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 2px;
+  i {
+    margin-right: 10px;
+  }
+  li {
+    line-height: 29px;
+    font-size: 12px;
+    a {
+      color: #a0a3a4;
+      transition: color 0.2s linear 0s, background 0.2s linear 0s;
+      &:hover {
+        color: #ff670f;
+        transition: color 0.2s linear 0s, background 0.2s linear 0s;
+      }
+    }
+  }
+}
+
+.footer-copyright {
+  color: #fff;
+  background-color: #3b454c;
+  p {
+    padding: 10px 0;
+    margin-bottom: 0;
+  }
+  a {
+    color: #fff;
+  }
+  .footer-menu {
+    padding: 10px 0;
+    li {
+      display: inline-block;
+      a {
+        margin-left: 8px;
+        padding-left: 8px;
+        border-left: 1px solid #353e44;
+      }
+      &:first-child {
+        a {
+          margin-left: 0;
+          padding-left: 0;
+          border-left: 0;
+        }
+      }
+    }
+  }
+}
+
+.heading7 { font-size:21px; font-weight:700; color:#d9d6d6; margin-bottom:22px;}
+.post p { font-size:12px; color:#FFF; line-height:20px;}
+.post p span { display:block; color:#8f8f8f;}
+.bottom_ul { list-style-type:none; float:right; margin-bottom:0;}
+.bottom_ul li { float:left; line-height:40px;}
+.bottom_ul li:after { content:"/"; color:#FFF; margin-right:8px; margin-left:8px;}
+.bottom_ul li a { color:#FFF;  font-size:12px;}
