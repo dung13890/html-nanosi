@@ -2,12 +2,18 @@
 
   'use strict';
 
+  function getRandomAnimation(position = 'in') {
+    var animationList = (position == 'in') ? ['bounce', 'zoomIn', 'fadeIn', 'flipInX']
+      : ['bounce', 'zoomOut', 'fadeOut', 'slideOutDown']; 
+      return animationList[Math.floor(Math.random() * animationList.length)];
+    }
+
   /* ------------- Document.ready ------------- */
   $(document).ready(function() {
 
     // Menu zord
     $("#menuzord").menuzord({
-     indicatorFirstLevel: "<i class='fa fa-angle-down'></i>"
+      indicatorFirstLevel: "<i class='fa fa-angle-down'></i>"
     });
 
     // Slideshow
@@ -22,8 +28,8 @@
           loop: true,
           autoplay: true,
           autoplayTimeout: 3000,
-          animateOut: 'zoomOut',
-          animateIn: 'zoomIn',
+          animateOut: 'slideOutDown',
+          animateIn: 'flipInX',
           smartSpeed: 450,
           responsive: {
             0: {
